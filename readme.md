@@ -1,0 +1,1 @@
+Collection of git hooks
