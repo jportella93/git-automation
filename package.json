@@ -1,0 +1,19 @@
+{
+  "name": "git-hooks",
+  "version": "1.0.0",
+  "description": "Collection of git hooks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "hooks",
+    "automatic",
+    "merge",
+    "pull",
+    "request"
+  ],
+  "author": "Jon Portella",
+  "license": "ISC"
+}
