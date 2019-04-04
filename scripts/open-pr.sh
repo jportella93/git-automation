@@ -64,10 +64,10 @@ data=$(cat <<-END
 END
 )
 
-status_code=$(curl -s --user "$username:$password" -X POST "https://api.github.com/repos/$repo_owner/$repo_name/pulls" -d "$data" -w %{http_code})
+status_code=$(curl -s --user "$username:$password" -X POST "https://api.github.com/repos/$repo_owner/$repo_name/pulls" -d "$data" -w %{http_code} -o /dev/null)
 
 if
-  [[ status_code == 201 ]]; then
+  [[ status_code == "201" ]]; then
   echo "Complete!"
 else
   echo "Error occurred, $status_code status received" >&2
